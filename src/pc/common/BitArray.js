@@ -10,7 +10,7 @@ class BitArray {
     // assert(options.bitsPerValue <= 32, 'bits per value exceeds 32')
 
     if (!options.data) {
-      options.data = new UInt32Array(Math.ceil((options.capacity * options.bitsPerValue) / 64) * 2)
+      options.data = new Uint32Array(Math.ceil((options.capacity * options.bitsPerValue) / 64) * 2)
     }
     const valueMask = (1 << options.bitsPerValue) - 1
 
